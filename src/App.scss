@@ -1,0 +1,50 @@
+@font-face {
+  src: url("./assets/Montserrat-Regular.ttf");
+  font-family: Montserrat;
+}
+
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,div,p {
+  margin:0;
+}
+
+.app {
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  padding-top:200px;
+  font-family: Montserrat;
+
+  &__container {
+    margin:0 auto;
+    width: 400px;
+  }
+
+  &__inner {
+
+  }
+
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__dataItem {
+    width:48%;
+    &:not(:nth-child(-n + 2)) {
+      margin-top: 10px;
+    }
+  }
+
+}
+
